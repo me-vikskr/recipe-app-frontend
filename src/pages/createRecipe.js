@@ -42,7 +42,7 @@ export const CreateRecipe = () => {
     event.preventDefault();
     try{
       await axios.post(
-        "http://localhost:3001/recipes", 
+        "https://recipe-app-lcpu.onrender.com/recipes", 
         {...recipe},
         {
           headers: {authorization: cookies.access_token},

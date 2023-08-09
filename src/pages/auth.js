@@ -24,7 +24,7 @@ const Login = () => {
     event.preventDefault();
 
     try{
-      const response = await axios.post("http://localhost:3001/auth/login", {
+      const response = await axios.post("https://recipe-app-lcpu.onrender.com/auth/login", {
         username,
         password,
       });
@@ -77,7 +77,7 @@ const Register = () => {
     event.preventDefault();
 
     try{
-      await axios.post("http://localhost:3001/auth/register", {
+      await axios.post("https://recipe-app-lcpu.onrender.com/auth/register", {
         username,
         password,
       });
